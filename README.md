@@ -85,3 +85,59 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
   extension=tokenizer
   extension=curl
 
+2. **Install Composer**
+
+- Download Composer from [https://getcomposer.org/download/]
+- Run the Composer-Setup.exe installer
+- Follow the installation wizard (make sure the PHP path is correct)
+- Restart the command prompt
+- Test by running:
+- composer --version
+
+3. **Install Node.js and NPM**
+
+- Download Node.js from [https://nodejs.org/]
+- Install the latest LTS version
+- Restart the command prompt
+- Test with:
+- node --version
+- npm --version
+
+4. **Install PostgreSQL**
+
+- Download PostgreSQL from [https://www.postgresql.org/download/windows/]
+- Install PostgreSQL (version 12 or newer)
+- During installation:
+- Note the password for the postgres user
+- Default port: 5432
+- Install pgAdmin 4 (GUI tool for managing databases)
+- After installation, open pgAdmin 4 to verify the connection
+
+Laravel Installation Steps
+
+1. Install Laravel Installer (Global)
+
+- composer global require laravel/installer
+Add Composer global bin ke PATH:
+Add C:\Users\username\AppData\Roaming\Composer\vendor\bin ke PATH environment variable
+
+2. Create New Project Laravel
+
+- Open Command Prompt or PowerShell, navigate to the folder where you want to create the project:
+  # Method 1: Use Composer (alternative)
+  - composer create-project laravel/laravel name-project
+  - cd name-project
+
+  # Setup Environment
+  - Copy file .env.example become .env
+  - Generate application key:
+    - php artisan key:generate
+  - Edit file .env
+   ```ini
+   DB_CONNECTION=pgsql
+   DB_HOST=127.0.0.1
+   DB_PORT=5432
+   DB_DATABASE=nama_database
+   DB_USERNAME=postgres
+   DB_PASSWORD=password_postgresql_anda
+
