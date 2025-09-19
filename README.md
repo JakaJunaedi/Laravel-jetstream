@@ -87,7 +87,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 2. **Install Composer**
 
-- Download Composer from [https://getcomposer.org/download/]
+- Download Composer from [https://getcomposer.org/download/](https://getcomposer.org/download/)
 - Run the Composer-Setup.exe installer
 - Follow the installation wizard (make sure the PHP path is correct)
 - Restart the command prompt
@@ -96,7 +96,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 3. **Install Node.js and NPM**
 
-- Download Node.js from [https://nodejs.org/]
+- Download Node.js from [https://nodejs.org/](https://nodejs.org/)
 - Install the latest LTS version
 - Restart the command prompt
 - Test with:
@@ -105,7 +105,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 4. **Install PostgreSQL**
 
-- Download PostgreSQL from [https://www.postgresql.org/download/windows/]
+- Download PostgreSQL from [https://www.postgresql.org/download/windows/](https://www.postgresql.org/download/windows/)
 - Install PostgreSQL (version 12 or newer)
 - During installation:
 - Note the password for the postgres user
@@ -126,14 +126,13 @@ Add C:\Users\username\AppData\Roaming\Composer\vendor\bin ke PATH environment va
 - Open Command Prompt or PowerShell, navigate to the folder where you want to create the project:
   # Method 1: Use Composer (alternative)
   ```ini
-  composer create-project laravel/laravel name-project
-  - cd name-project
+composer create-project laravel/laravel name-project
+- cd name-project
 
   # Setup Environment
   - Copy file .env.example become .env
   - Generate application key:
-  ```ini
-  php artisan key:generate
+    - php artisan key:generate
   - Edit file .env
    ```ini
    DB_CONNECTION=pgsql
