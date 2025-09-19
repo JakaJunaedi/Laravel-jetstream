@@ -254,7 +254,7 @@ Anda akan melihat halaman Laravel dengan fitur authentication yang sudah siap:
 ![Dashboard](screenshots/dashboard.png)
 
 ### VueJS http://localhost:5173
-![Vue](screenshots/dashboard.png)
+![Vue](screenshots/default.png)
 
 *Catatan: Screenshot diambil setelah menjalankan `php artisan serve` dan `npm run dev`*
 
