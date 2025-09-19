@@ -125,7 +125,7 @@ Add C:\Users\username\AppData\Roaming\Composer\vendor\bin ke PATH environment va
 
 - Open Command Prompt or PowerShell, navigate to the folder where you want to create the project:
   # Method 1: Use Composer (alternative)
-  ```ini
+  ```bash
 composer create-project laravel/laravel name-project
 - cd name-project
 
