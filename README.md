@@ -125,13 +125,15 @@ Add C:\Users\username\AppData\Roaming\Composer\vendor\bin ke PATH environment va
 
 - Open Command Prompt or PowerShell, navigate to the folder where you want to create the project:
   # Method 1: Use Composer (alternative)
-  - composer create-project laravel/laravel name-project
+  ```ini
+  composer create-project laravel/laravel name-project
   - cd name-project
 
   # Setup Environment
   - Copy file .env.example become .env
   - Generate application key:
-    - php artisan key:generate
+  ```ini
+  php artisan key:generate
   - Edit file .env
    ```ini
    DB_CONNECTION=pgsql
