@@ -59,3 +59,29 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Instructions  
+
+### Prerequisites (Initial Requirements for Windows)  
+
+1. **Install PHP**  
+
+- Download PHP from [https://windows.php.net/download/](https://windows.php.net/download/)  
+- Choose PHP version **8.1 or newer (Thread Safe)**  
+- Extract it into the folder `C:\php`  
+- Add `C:\php` to the **PATH environment variable**:  
+  - Open **Control Panel → System → Advanced System Settings**  
+  - Click **"Environment Variables"**  
+  - Under **System Variables**, find **"Path"** and click **Edit**  
+  - Add `C:\php`  
+
+- Copy `php.ini-development` and rename it to `php.ini`  
+- Edit `php.ini` and uncomment (remove `;`) the following extensions:  
+  ```ini
+  extension=pdo_pgsql
+  extension=pgsql
+  extension=openssl
+  extension=mbstring
+  extension=tokenizer
+  extension=curl
+
